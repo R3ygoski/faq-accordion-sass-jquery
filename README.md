@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
-- Live Site URL: [Github](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/faq-accordion-made-with-sass-and-jquery-KbXzPyW87e)
+- Live Site URL: [Github](https://r3ygoski.github.io/faq-accordion-sass-jquery/)
 
 ## My process
 
