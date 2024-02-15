@@ -1,0 +1,74 @@
+@use '../abstract/var';
+
+.card {
+    background: var.$white;
+    width: 90%;
+    height: auto;
+    z-index: 2;
+    border-radius: 1rem;
+    padding: 2.4rem;
+    box-shadow: 0 15px 45px rgba(0,0,0,.2);
+    min-width: 310px;
+    max-width: 520px;
+    &__top-section {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 3.2rem;
+        &-title {
+            color: var.$dark-purple;
+            font-size: 3rem;
+        }
+        &-icon {
+            width: 24px;
+            height: 24px;
+        }
+    }
+    &__faq-section {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 3.2rem 0;
+        &-top {
+            display: flex;
+            justify-content: space-between;
+            &-title {
+                color: var.$dark-purple;
+                font-size: 1.7rem;
+                width: 80%;
+                cursor: pointer;
+                &:hover {
+                    color: var.$purple;
+                }
+            }
+        }
+        &-bottom {
+            &-text {
+                display: none;
+                color: var.$grayish-purple;
+                font-size: 1.6rem;
+                margin: 2rem 0;
+            }
+        }
+        .icon {
+            width: 30px;
+            height: 30px;
+            background-image: url('../../assets/images/icon-plus.svg');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+        .opened {
+            background-image: url('../../assets/images/icon-minus.svg');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.showing {
+    display: block;
+}

@@ -1,0 +1,25 @@
+@use '../abstract/var';
+
+@media (min-width: 1440px){
+    .background {
+        &__image {
+            background: url('../../assets/images/background-pattern-desktop.svg');
+        }
+    }
+    .card {
+        &__faq-section {
+            &-top {
+                align-items: center;
+                &-title {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1800px){
+    .card {
+        max-width: 960px;
+    }
+}
